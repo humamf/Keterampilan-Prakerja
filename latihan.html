@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .product {
+        flex: 5 0 15%;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+      }
+
+      .product img {
+        max-width: 100%;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        clear: both;
+      }
+
+      @media (max-width: 1024px) {
+        .product {
+          flex: 0 0 45%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          display: block;
+        }
+
+        nav a {
+          display: block;
+          padding: 20px;
+        }
+        .container {
+          justify-content: center;
+        }
+
+        .product {
+          flex: 0 0 90%;
+        }
+
+        footer {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          clear: both;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>UShop</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+      <a href="#" class="cart">Cart (0)</a>
+    </nav>
+
+    <div class="container">
+      <div class="product">
+        <img src="sepatu.jpeg" alt="Product 1" />
+        <h3>Product 1</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+          vero. Aperiam enim, quibusdam repellendus debitis illum ratione
+          voluptatem officiis odio cum molestias?
+        </p>
+        <p>Harga: Rp.1.xxx.xxx</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="sepatu.jpeg" alt="Product 2" />
+        <h3>Product 2</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
+          voluptatibus tempore! Accusantium odit repudiandae, eaque mollitia
+          quod neque harum nemo nesciunt amet.
+        </p>
+        <p>Harga: Rp.2.xxx.xxx</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="sepatu.jpeg" alt="Product 3" />
+        <h3>Product 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+          molestiae, ipsa quo commodi quos sint esse nostrum ea. Aut debitis
+          ratione officia rerum hic quasi rem sint quis recusandae.
+        </p>
+        <p>Harga: Rp.1.xxx.xxx</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+    <footer>&copy; 2023 Humam Fathurrahman | All rights reserved.</footer>
+    <script>
+      function addToCart() {
+        alert("Menambahkan Barang Ke Keranjang!");
+      }
+    </script>
+  </body>
+</html>
